@@ -48,6 +48,8 @@ export default function createObservableComponent(componentFunction) {
             if (!insideLifecycle) {
               this.forceUpdateWithoutRefresh()
             }
+          }, error => {
+            throw error
           })
       } else {
         this.vtree = vtreeOrObservable
