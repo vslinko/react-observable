@@ -29,14 +29,17 @@
     "url": "vslinko/react-observable"
   },
   "scripts": {
-    "prepublish": "babel lib -d dist"
+    "prepublish": "babel lib -d dist",
+    "lint": "eslint lib"
   },
   "config": {
   },
   "dependencies": {
   },
   "devDependencies": {
-    "babel": "~5.5"
+    "babel": "~5.5",
+    "eslint": "0.23.0",
+    "babel-eslint": "3.1.16"
   },
   "peerDependencies": {
     "react": "~0.13",
