@@ -29,7 +29,10 @@
     "url": "vslinko/react-observable"
   },
   "scripts": {
-    "prepublish": "babel lib -d dist",
+    "build": "babel lib -d dist",
+    "prepublish": "npm run lint && npm run build",
+    "jest": "jest",
+    "test": "npm run build && npm run jest",
     "lint": "eslint lib"
   },
   "config": {
@@ -39,7 +42,9 @@
   "devDependencies": {
     "babel": "~5.5",
     "eslint": "0.23.0",
-    "babel-eslint": "3.1.16"
+    "babel-eslint": "3.1.16",
+    "babel-runtime": "5.5.8",
+    "jest-cli": "0.4.13"
   },
   "peerDependencies": {
     "react": "~0.13",
@@ -58,5 +63,8 @@
   "preferGlobal": false,
   "private": false,
   "publishConfig": {
+  },
+  "jest": {
+    "testPathDirs": ["<rootDir>/dist"]
   }
 }
