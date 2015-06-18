@@ -41,6 +41,7 @@
     "babel-loader": "5.1.4",
     "babel-runtime": "5.5.8",
     "chai": "3.0.0",
+    "chai.assert": "1.0.0",
     "codecov.io": "0.1.2",
     "eslint": "0.23.0",
     "eslint-plugin-react": "2.5.2",

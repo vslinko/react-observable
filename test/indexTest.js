@@ -1,10 +1,6 @@
-import chai from 'chai'
 import React from 'react'
-import TestUtils from 'react/lib/ReactTestUtils'
 import Rx from 'rx'
-import createObservableComponent from '../index.js'
-
-const {assert} = chai
+import createObservableComponent from '../lib'
 
 describe('createObservableComponent', () => {
   const vtree = <div>test</div>
