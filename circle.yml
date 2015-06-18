@@ -1,0 +1,15 @@
+machine:
+  node:
+    version: iojs-v1.3.0
+
+dependencies:
+  override:
+    - npm install --ignore-scripts
+
+test:
+  post:
+    - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
+
+general:
+  artifacts:
+    - coverage

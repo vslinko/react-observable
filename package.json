@@ -27,24 +27,38 @@
     "url": "vslinko/react-observable"
   },
   "scripts": {
-    "build": "babel lib -d dist",
-    "prepublish": "npm run lint && npm run build",
-    "jest": "jest",
-    "test": "npm run build && npm run jest",
-    "lint": "eslint lib"
+    "lint": "eslint lib *.js",
+    "test": "rm -rf coverage && karma start",
+    "build": "rm -rf dist && babel lib -d dist",
+    "prepublish": "npm run lint && npm run test && npm run build"
   },
   "config": {},
   "dependencies": {},
   "devDependencies": {
-    "babel": "~5.5",
-    "babel-eslint": "3.1.16",
+    "babel": "5.5.8",
+    "babel-core": "5.5.8",
+    "babel-eslint": "3.1.17",
+    "babel-loader": "5.1.4",
     "babel-runtime": "5.5.8",
+    "chai": "3.0.0",
+    "codecov.io": "0.1.2",
     "eslint": "0.23.0",
-    "jest-cli": "0.4.13"
+    "eslint-plugin-react": "2.5.2",
+    "isparta-loader": "0.2.0",
+    "karma": "0.12.36",
+    "karma-chrome-launcher": "0.1.12",
+    "karma-coverage": "0.4.2",
+    "karma-mocha": "0.1.10",
+    "karma-webpack": "1.5.1",
+    "mocha": "2.2.5",
+    "node-libs-browser": "0.5.2",
+    "react": "0.13.3",
+    "rx": "2.5.3",
+    "webpack": "1.9.11"
   },
   "peerDependencies": {
-    "react": "~0.13",
-    "rx": "~2.5"
+    "react": "0.13.3",
+    "rx": "2.5.3"
   },
   "bundledDependencies": [],
   "optionalDependencies": {},
@@ -53,10 +67,5 @@
   "cpu": [],
   "preferGlobal": false,
   "private": false,
-  "publishConfig": {},
-  "jest": {
-    "testPathDirs": [
-      "<rootDir>/dist"
-    ]
-  }
+  "publishConfig": {}
 }
