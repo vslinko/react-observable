@@ -19,11 +19,9 @@
     "email": "vslinko@yahoo.com",
     "url": "https://twitter.com/vslinko"
   },
-  "contributors": [
-  ],
+  "contributors": [],
   "main": "dist",
-  "bin": {
-  },
+  "bin": {},
   "repository": {
     "type": "git",
     "url": "vslinko/react-observable"
@@ -35,36 +33,30 @@
     "test": "npm run build && npm run jest",
     "lint": "eslint lib"
   },
-  "config": {
-  },
-  "dependencies": {
-  },
+  "config": {},
+  "dependencies": {},
   "devDependencies": {
     "babel": "~5.5",
-    "eslint": "0.23.0",
     "babel-eslint": "3.1.16",
     "babel-runtime": "5.5.8",
+    "eslint": "0.23.0",
     "jest-cli": "0.4.13"
   },
   "peerDependencies": {
     "react": "~0.13",
     "rx": "~2.5"
   },
-  "bundledDependencies": [
-  ],
-  "optionalDependencies": {
-  },
-  "engines": {
-  },
-  "os": [
-  ],
-  "cpu": [
-  ],
+  "bundledDependencies": [],
+  "optionalDependencies": {},
+  "engines": {},
+  "os": [],
+  "cpu": [],
   "preferGlobal": false,
   "private": false,
-  "publishConfig": {
-  },
+  "publishConfig": {},
   "jest": {
-    "testPathDirs": ["<rootDir>/dist"]
+    "testPathDirs": [
+      "<rootDir>/dist"
+    ]
   }
 }
